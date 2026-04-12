@@ -1,0 +1,93 @@
+{
+  "name": "pos-18-odoo-skills",
+  "version": "1.0.0",
+  "description": "Complete Odoo 18 Enterprise POS (Point of Sale) development skill. Covers 94+ modules, OWL/JS frontend, Python backend, extension patterns, IoT integration, localization, and best practices.",
+  "author": "LFCamara",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lfcamara/pos-18-odoo-skills"
+  },
+  "trigger_phrases": [
+    "odoo pos",
+    "point of sale",
+    "pos odoo 18",
+    "pos module",
+    "pos extension",
+    "pos customization",
+    "pos development",
+    "pos owl",
+    "pos frontend",
+    "pos backend",
+    "pos payment",
+    "pos restaurant",
+    "pos self order",
+    "pos loyalty",
+    "pos hr",
+    "pos iot",
+    "pos localization",
+    "pos fiscal",
+    "pos blackbox",
+    "pos receipt",
+    "pos ticket",
+    "pos screen",
+    "pos component",
+    "cash register",
+    "pos kiosk"
+  ],
+  "categories": [
+    "odoo",
+    "pos",
+    "point-of-sale",
+    "owl",
+    "javascript",
+    "python",
+    "erp",
+    "ecommerce",
+    "retail",
+    "restaurant",
+    "fiscal",
+    "localization",
+    "iot"
+  ],
+  "skill_format": "skillfish",
+  "compatibility": [
+    "skillfish",
+    "claude-code",
+    "qwen-code",
+    "codex"
+  ],
+  "main": "SKILL.md",
+  "files": {
+    "skill": "SKILL.md",
+    "references": [
+      "references/module-catalog.md",
+      "references/architecture-patterns.md",
+      "references/frontend-patterns.md",
+      "references/backend-patterns.md",
+      "references/extension-patterns.md",
+      "references/localization-guide.md",
+      "references/best-practices.md",
+      "references/quick-reference.md"
+    ]
+  },
+  "stats": {
+    "modules_documented": 94,
+    "reference_files": 8,
+    "total_pages": "15+",
+    "odoo_version": "18.0",
+    "license_types": ["LGPL-3", "OEEL-1"]
+  },
+  "features": [
+    "Complete module catalog (94+ POS modules)",
+    "Frontend OWL/JavaScript patterns",
+    "Backend Python patterns",
+    "Extension and override patterns",
+    "Localization and fiscal compliance guide",
+    "IoT and hardware integration",
+    "Offline architecture patterns",
+    "Best practices and code quality",
+    "Quick reference cheat sheets",
+    "Troubleshooting guide"
+  ]
+}
