@@ -37,31 +37,77 @@ This is a comprehensive, AI-optimized skill package for developing Odoo 18 POS e
 
 ## Installation
 
-### For AI Coding Agents (Claude Code, Qwen Code, etc.)
+### ⚡ One-Line Install (Recommended)
 
-Place the `SKILL.md` file in your project's skills directory:
+**For Claude Code / Gemini CLI / any AI agent using `npx skills`:**
+
+```bash
+npx skills add lfcamarac/pos-18-odoo-skills
+```
+
+This single command downloads the repo and installs the `SKILL.md` into your AI agent's skills directory automatically.
+
+### Option A: Install via `npx skills add` (Claude Code, Gemini, Copilot)
+
+```bash
+# Installs to ~/.claude/skills/ (Claude Code) or equivalent
+npx skills add lfcamarac/pos-18-odoo-skills
+
+# Or with full URL
+npx skills add https://github.com/lfcamarac/pos-18-odoo-skills
+```
+
+**Supported agents:** Claude Code, Gemini CLI (`gemini skills install`), GitHub Copilot CLI, and any agent compatible with the `npx skills` registry.
+
+### Option B: Install via `skillfish`
+
+```bash
+# Install skillfish CLI (if not already installed)
+npm install -g skillfish
+
+# Install the skill globally
+skillfish install lfcamarac/pos-18-odoo-skills
+```
+
+### Option C: Manual Git Install
 
 ```bash
 # Clone the repository
-git clone https://github.com/lfcamara/pos-18-odoo-skills.git
+git clone https://github.com/lfcamarac/pos-18-odoo-skills.git
 
-# Or copy the files directly
-cp -r pos-18-odoo-skills/* ~/.claude/skills/pos-odoo-18/
+# Copy to your AI agent's skills directory
+mkdir -p ~/.claude/skills/pos-18-odoo-skills
+cp -r pos-18-odoo-skills/SKILL.md pos-18-odoo-skills/references ~/.claude/skills/pos-18-odoo-skills/
 ```
 
-### For SkillFish
+### Option D: Manual Download (ZIP)
 
 ```bash
-skillfish install pos-18-odoo-skills
+curl -L https://github.com/lfcamarac/pos-18-odoo-skills/archive/refs/heads/main.zip -o pos-skills.zip && \
+  unzip pos-skills.zip -d /tmp && \
+  mkdir -p ~/.claude/skills/pos-18-odoo-skills && \
+  cp -r /tmp/pos-18-odoo-skills-main/{SKILL.md,references} ~/.claude/skills/pos-18-odoo-skills/ && \
+  rm -rf /tmp/pos-18-odoo-skills-main pos-skills.zip
 ```
 
-### Manual Usage
+### Option E: Direct Reference (No Install)
 
 Simply keep this repository accessible and reference `SKILL.md` when working with Odoo POS:
 
 ```
 When working on Odoo 18 POS, reference: /path/to/pos-18-odoo-skills/SKILL.md
 ```
+
+---
+
+### Installation Matrix
+
+| Method | Command | Best For |
+|--------|---------|----------|
+| **One-liner** | `npx skills add lfcamarac/pos-18-odoo-skills` | Quick install, any agent |
+| **skillfish** | `npm i -g skillfish && skillfish install lfcamarac/pos-18-odoo-skills` | Teams, shared skills |
+| **Git clone** | `git clone` + manual copy | Full repo access |
+| **ZIP** | `curl` + `unzip` | No git/npm needed |
 
 ---
 
