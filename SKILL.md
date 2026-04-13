@@ -1,3 +1,8 @@
+---
+name: odoo-18-pos
+description: Complete Odoo 18 Enterprise POS (Point of Sale) development skill. Covers 94+ modules, OWL/JS frontend, Python backend, extension patterns, localization, IoT integration, and best practices.
+---
+
 # Odoo 18 POS (Point of Sale) — Complete Development Skill
 
 > Master reference for developing, extending, and maintaining Odoo 18 Enterprise POS modules. Covers 94+ modules, OWL/JS frontend, Python backend, extension patterns, localization, IoT integration, and enterprise-exclusive features.
